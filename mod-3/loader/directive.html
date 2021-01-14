@@ -1,0 +1,11 @@
+<div class="display-items">
+  <ul>
+    <li ng-repeat="item in items" style="margin-top:2em;">
+        Name: {{item.name}}<br>
+        Short Name: {{item.short_name}}<br>
+        Description: {{item.description}}<br>
+        <button ng-click="onRemove({index: $index});">Don't want this one!</button>
+    </li>
+  </ul>
+</div>
+<div class="display-no-items" ng-if = "items.length === 0">Nothing found!</div>
