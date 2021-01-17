@@ -1,0 +1,8 @@
+<h3 style="text-align:left;"> Category:</h3>
+<div class="display-items">
+  <ul>
+    <li ng-repeat="item in $ctrl.categories" style="margin-top:2em;">
+      <a ui-sref="items({cat_name: item.short_name})">{{ item.name }}</a> 
+    </li>
+  </ul>
+</div>
