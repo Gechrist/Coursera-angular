@@ -1,0 +1,18 @@
+
+<div id="display">
+  <div ng-if="infoCtrl.show === true">
+    <h1 id="header">User Information</h1>
+    <p>First Name: {{infoCtrl.user.fname}}</p><br>
+    <p>Last Name: {{infoCtrl.user.lname}}</p><br>
+    <p>Email: {{infoCtrl.user.email}}</p><br>
+    <p>Phone Number: {{infoCtrl.user.phone}}</p>
+    <p>Favorite Dish:</p>
+    <h3>{{infoCtrl.user.favitemobject.name}}</h3>
+    {{infoCtrl.user.favitemobject.description}}
+  </div>
+  <div ng-if="infoCtrl.show === false">
+    <p>Not Signed Up Yet. <a id="redirect" ui-sref="public.signup">Sign up now!</a></p>
+
+  </div>
+
+</div>
